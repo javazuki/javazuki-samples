@@ -16,7 +16,7 @@ public class DoForwardServlet extends HttpServlet {
     System.out.println("DoForwardServlet doGet() called");
 
     // forward先でリクエスト属性が表示されるか確認するために設定
-    request.setAttribute("forwaredMessage", "Hello Forward");
+    request.setAttribute("forwaredMessage", "Hello Forward From DoForwardServlet");
 
     // forward()前後に出力処理を書いても内容は無視（クリア）される。
     // flush()などした後にforward()すると例外になる。
